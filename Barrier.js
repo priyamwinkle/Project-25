@@ -1,4 +1,4 @@
-class Ground{
+class Barrier{
     constructor(x,y,width,height){
         var options={
             isStatic:true
@@ -13,7 +13,8 @@ class Ground{
     display(){
         var pos=this.body.position;
         rectMode(CENTER);
-        fill ("black");
+        strokeWeight(0);
+        fill ("yellow");
         rect(pos.x,pos.y,this.width,this.height);
     }
 }
